@@ -14,3 +14,8 @@ git clone --depth 1 https://github.com/vernesong/OpenClash.git OpenClash
 git clone https://github.com/lkiuyu/luci-app-cpu-perf package/luci-app-cpu-perf
 git clone https://github.com/lkiuyu/luci-app-cpu-status package/luci-app-cpu-status
 git clone https://github.com/lkiuyu/luci-app-temp-status package/luci-app-temp-status
+
+# packages
+sed -i 's|src-git packages https://github.com/immortalwrt/packages.git;openwrt-25.12|src-git packages https://github.com/xuxin1955/packages.git;openwrt-25.12|g' feeds.conf.default
+
+
